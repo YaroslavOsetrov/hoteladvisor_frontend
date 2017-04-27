@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600');
+
+@import 'vars';
+@import 'partials/footer';
+@import 'partials/header';
+
+
+@import 'elements/panels';
+@import 'elements/dropdown';
+@import 'elements/iconbox';
+@import 'elements/jumbotron';
+@import 'elements/checkboxes';
+@import 'elements/cardhotel';
+
+@import 'elements/testimonials';
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.content-section{
+    padding:60px 0;
+    &:last-child{
+        padding-bottom:60px;
+    }
+    .content-section-header{
+        padding-bottom:2rem;
+    }
+    .content-section-row{
+        padding-top:2rem;
+    }
+}
+.content-section:last-child{
+   
+}
+
+.bg-grey{
+    background:@color-bg-grey;
+}
+
+@media screen and (max-width: 768px){
+
+  *[class*='col-xs']{
+    padding:30px;
+  }
+
+}

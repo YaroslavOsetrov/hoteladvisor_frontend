@@ -1,0 +1,77 @@
+ <div class="jumbotron jumbotron-mini">
+	<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<div class="input-group search-field">
+						<input placeholder="Where do you want to go?" class="form-control" />
+						<span class="input-group-btn">
+							<button class="btn btn-primary" type="submit">Search</button>
+						</span>
+					</div>
+				</div>
+				<div class="col-md-12 col-xs-12">
+					<div class="input-group search-filters">
+						<input id="chk-breakfast" class="styled-checkbox form-check-input" type="checkbox" value="value1">
+						<label for="chk-breakfast">Breakfast</label>
+						<input id="chk-wifi" class="styled-checkbox form-check-input" type="checkbox" value="value1">
+						<label for="chk-wifi">Wi-Fi</label>
+					</div>
+					
+				</div>
+			</div>
+	</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card card-hotel-full">
+                <div class="card-block card-hotel-full">
+                    <div class="card-detail-container">
+                        <h4 class="card-title">Come Inn</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">234 West St</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                        
+                        <p class="facilities">
+                            <span class="text-success">
+                                <i class="fa fa-wifi"></i> Wi-Fi
+                            </span>
+                            <span class="text-success">
+                                <i class="fa fa-cutlery"></i> Breakfast
+                            </span>
+                        </p>
+                         <div class="card-image-container">
+                            <img class="img-responsive center-block" src="http://placehold.it/800x600">
+                        </div>
+                        <div class="card-price-container">
+                        <div class="row">
+                            <div class="col-xs-10">
+                                <span class="card-price-fee">
+                                    $90/night
+                                </span>
+                            </div>
+                            <div class="col-xs-2 text-right">
+                                <a class="btn btn-primary">
+                                    Book
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div *ngFor="let i of [1,2,3]" class="testimonial-item">
+                <blockquote>
+                    The hotel is really awesome lorem ipsum dolor sit amet osadfasdf iasdf asdfjsa sadfjkl askdljf kljasdf jklasdk jlfasdfkl kljafsd lkjasdf lkjafs d
+                </blockquote>
+                <small>
+                    Ivanov Ivan, Moscow
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
